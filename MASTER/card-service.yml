@@ -1,4 +1,4 @@
-Server:0
+Server:
 port: 8904
  
 eureka:
