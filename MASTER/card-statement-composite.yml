@@ -1,6 +1,15 @@
 server:
   port: 0
- 
+  
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000
+            
 eureka:
   client:
     serviceUrl:
